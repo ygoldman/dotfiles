@@ -48,8 +48,8 @@
     protocol = https
     user = nonrational
 [credential]
-    helper = /opt/boxen/bin/boxen-git-credential
+	helper = osxkeychain
 [push]
-	default = upstream
+    default = simple
 [git-up "bundler"]
-	check = true
+    check = true
