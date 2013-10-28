@@ -20,6 +20,7 @@ if [ "$my_uname" == "Darwin" ]; then
     export EDITOR='subl -w'
     export LESS="$LESS -i -F -R -X"
 
+<<<<<<< 50a2b4f2f0068efdcd8a459e244590e1377d7ffa
     # give the VM a semi-ridiculous amount of memory.
     LOTS_O_MEM='-Xmx1024m -Xms256m -XX:MaxPermSize=128m'
     # make JVM GC sweep permgen as well.
@@ -38,6 +39,12 @@ if [ "$my_uname" == "Darwin" ]; then
 
     export GOPATH=$HOME/go
 
+=======
+    # JAVA 7
+    export JAVA_HOME=/Library/Java/Home
+    export JRE_HOME=$JAVA_HOME/jre
+    export LANG=en_US.UTF-8
+>>>>>>> updates to start-tocmact an default jre_home
     # preview man
     pman() {
         man -t "${1}" | open -f -a /Applications/Preview.app/
@@ -188,7 +195,6 @@ fi
 
 # if there are settings for a particular machine, put them in .local.bashrc
 # i.e. PS1="[\u@\h \W]\$ "
-[[ -s $HOME/.local.bashrc ]]  && . $HOME/.local.bashrc
 [[ -s $HOME/.local/.bashrc ]] && . $HOME/.local/.bashrc
 
 # added by travis gem

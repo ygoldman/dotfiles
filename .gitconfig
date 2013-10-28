@@ -1,10 +1,10 @@
 [user]
-    name = Yuriy M Goldman
-    email = yuriy@betterment.com
+	name = Yuriy M Goldman
+	email = yuriy@mealpass.com
 [github]
     user = nonrational
 [core]
-    excludesfile = /opt/boxen/config/git/gitignore
+	excludesfile = /Users/yuriygoldman/.gitignore_global
 	# excludesfile = /Users/norton/.gitignore_global
     quotepath = false
     whitespace = cr-at-eol
@@ -87,3 +87,11 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[commit]
+	template = /Users/yuriygoldman/.stCommitMsg
