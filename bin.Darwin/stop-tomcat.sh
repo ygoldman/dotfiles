@@ -1,9 +1,9 @@
 #!/bin/bash
 TOMCAT="$HOME/my/toolbox/tomcat-6.0.18"
-echo "Starting Tomcat from $TOMCAT"
+echo "Stopping Tomcat from $TOMCAT"
         
 # start tomcat
-$TOMCAT/bin/catalina.sh jpda start 
+$TOMCAT/bin/catalina.sh stop 
                
 sleep 10s
 
