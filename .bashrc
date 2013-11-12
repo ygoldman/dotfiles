@@ -176,8 +176,8 @@ linux_prompt="[\u@\h \W]"
 darwin_prompt="\u@\h:\W"
 me_prompt="\h:\W"
 
-if [ "$my_uname" == "Darwin" ]; then
-    if [ "$myself" == 'norton' -o "$myself" == 'anorton' ]; then
+if [ "$uname" == "Darwin" ]; then
+    if [ "$myself" == 'yuriy' -o "$myself" == 'ygoldman' ]; then
         uber_prompt $me_prompt;
     else
         uber_prompt $darwin_prompt;
@@ -190,9 +190,3 @@ fi
 # i.e. PS1="[\u@\h \W]\$ "
 [[ -s $HOME/.local.bashrc ]]  && . $HOME/.local.bashrc
 [[ -s $HOME/.local/.bashrc ]] && . $HOME/.local/.bashrc
-
-# added by travis gem
-[ -f /Users/norton/.travis/travis.sh ] && source /Users/norton/.travis/travis.sh
-
-# set +x
-# exec 2>&3 3>&-
