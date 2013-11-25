@@ -14,4 +14,4 @@ then
     SLEEP=5
 fi
 
-while true; do $COMMAND; sleep $SLEEP; done;
+while $COMMAND; do sleep $SLEEP; done;
