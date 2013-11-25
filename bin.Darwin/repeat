@@ -1,0 +1,17 @@
+#!/bin/bash
+
+COMMAND=$1
+SLEEP=$2
+
+if [ $# -eq 0 ]
+then
+    echo "Usage: $0 command sleep_seconds_to_repeat"
+    exit -1
+fi
+
+if [ -z "$2" ]
+then
+    SLEEP=5
+fi
+
+while true; do $COMMAND; sleep $SLEEP; done;
