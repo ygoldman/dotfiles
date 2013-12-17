@@ -2,8 +2,8 @@
 export TOMCAT_HOME=/Users/yuriy/my/toolbox/tomcat-6.0.18
 export JAVA_HOME=/Library/Java/Home
 export VOLTDB_HOME=/opt/voltdb
-
-export PATH="$PATH:$VOLTDB_HOME/bin"
+export ENUNCIATE_HOME=/opt/enunciate
+export PATH="$PATH:$VOLTDB_HOME/bin:$ENUNCIATE_HOME/bin"
 
 export SERVER_USER="ygoldman"
 alias rt="start-tomcat.sh"
