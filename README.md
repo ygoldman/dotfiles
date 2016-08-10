@@ -1,12 +1,12 @@
 Why?
 ---- 
-Because Nonrational (https://github.com/nonrational) showed me the way... and because storing cross-machine config is cumbersome. Installing Git is &mdash; for the most part &mdash; easy.
+Because Nonrational (https://github.com/ygoldman) showed me the way... and because storing cross-machine config is cumbersome. Installing Git is &mdash; for the most part &mdash; easy.
 
 Making it Work
 --------
 Getting Started:
 
-    git clone https://github.com/nonrational/dotfiles ~/.dotfiles && cd ~/.dotfiles
+    git clone https://github.com/ygoldman/dotfiles ~/.dotfiles && cd ~/.dotfiles
     ./pu.sh
     
 Alternatively (requires wget but not git):
