@@ -20,7 +20,7 @@ set tabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
-set autoindent
+"set autoindent
 
 set dictionary=/usr/share/dict/words
 map <F7> :set complete+=k<CR>

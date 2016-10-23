@@ -1,7 +1,6 @@
 #!/bin/sh
 
-PEMDIR=~/.ssh/aws
-chmod 400 $PEMDIR/*
+PEMDIR=~/.ssh/certs
 
 if [[ $# < 2 ]]; then
     echo "Usage: $0 <pem-name> <ip>";

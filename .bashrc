@@ -190,3 +190,4 @@ fi
 # i.e. PS1="[\u@\h \W]\$ "
 [[ -s $HOME/.local.bashrc ]]  && . $HOME/.local.bashrc
 [[ -s $HOME/.local/.bashrc ]] && . $HOME/.local/.bashrc
+[[ -s $HOME/.local.passwordsrc ]]  && . $HOME/.local.passwordsrc

@@ -10,6 +10,4 @@ Backup
 
 *.cache
 *.pyc
-
-bin.Darwin/local
-bin.Linux/local
+*passwordrc
