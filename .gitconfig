@@ -47,7 +47,7 @@
     aww = "!. ~/.githelpers && add_wildcard"
     uww = "!. ~/.githelpers && reset_wildcard"
 
-    mall = "!git up && git co stage && git merge master && git push origin stage && git co develop && git merge stage && git push origin develop"
+    mall = "!git up && git co qa && git merge master && git push origin qa && git co develop && git merge qa && git push origin develop"
     sup = "!. ~/.githelpers && current_pulls_into_here"
     super = "!. ~/.githelpers && current_pulls_into_here_with_colorful_status"
 
