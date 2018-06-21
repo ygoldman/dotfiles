@@ -11,3 +11,6 @@ fi
 
 [[ -d "/usr/local/heroku/bin" ]] && export PATH="$PATH:/usr/local/heroku/bin"
 [[ -d "/usr/local/share/npm/bin/" ]] && export PATH="$PATH:/usr/local/share/npm/bin/"
+
+# added by Anaconda3 5.0.1 installer
+export PATH="/Users/yuriygoldman/anaconda3/bin:$PATH"

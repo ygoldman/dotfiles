@@ -21,5 +21,15 @@ def irb_history(count = nil)
   end
 end
 
+def pbcopy(input)
+  str = input.to_s
+  IO.popen('pbcopy', 'w') { |f| f << str }
+  str
+end
+
+def pbpaste
+  `pbpaste`
+end
+
 require 'securerandom'
 require 'base64'

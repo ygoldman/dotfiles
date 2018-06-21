@@ -1,6 +1,6 @@
 [user]
 	name = Yuriy M Goldman
-	email = yuriy@mealpass.com
+	email = yuriy@mealpal.com
 [github]
     user = nonrational
 [core]
@@ -47,7 +47,8 @@
     aww = "!. ~/.githelpers && add_wildcard"
     uww = "!. ~/.githelpers && reset_wildcard"
 
-    mall = "!git up && git co qa && git merge master && git push origin qa && git co develop && git merge qa && git push origin develop"
+    mall = "!git up && git co staging && git merge master && git push origin staging && git co develop && git merge staging && git push origin develop"
+    up = "!git co master && git pull && git co staging && git pull && git co develop && git pull"
     sup = "!. ~/.githelpers && current_pulls_into_here"
     super = "!. ~/.githelpers && current_pulls_into_here_with_colorful_status"
 
@@ -56,7 +57,8 @@
 
     pall = "!for r in $(git remote); do git push $r $(git rev-parse --abbrev-ref HEAD); done"
     pp = "!git push || $(git push 2>&1 >/dev/null | tail -n2 | head -n1)"
-
+    
+    tidy = "!git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done" 
 [color]
     ui = true
 [gist]

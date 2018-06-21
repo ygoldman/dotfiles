@@ -192,3 +192,5 @@ fi
 [[ -s $HOME/.local.bashrc ]]  && . $HOME/.local.bashrc
 [[ -s $HOME/.local/.bashrc ]] && . $HOME/.local/.bashrc
 [[ -s $HOME/.local.passwordrc ]]  && . $HOME/.local.passwordrc
+
+[[ -s "$HOME/.bootstrap/env.sh" ]] && . "$HOME/.bootstrap/env.sh"
