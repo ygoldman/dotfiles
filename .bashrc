@@ -194,3 +194,12 @@ fi
 [[ -s $HOME/.local.passwordrc ]]  && . $HOME/.local.passwordrc
 
 [[ -s "$HOME/.bootstrap/env.sh" ]] && . "$HOME/.bootstrap/env.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if [[ ":$PATH:" != *":$HOME/.datacoral/cli/bin:"* ]];
+then
+  export PATH=$HOME/.datacoral/cli/bin:$PATH
+fi
